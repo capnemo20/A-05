@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- navbar starts -->
-    <navbar class="flex items-center justify-between m-2">
+    <navbar class="flex flex-col sm:flex-row items-center justify-between m-2">
       <div class="flex items-center">
         <img class="h-[40px] w-[40px]" src="./assets/logo.png" alt="" />
         <h3 class="ml-1">
@@ -24,7 +24,7 @@
           Service
         </h3>
       </div>
-      <div class="flex flex-row gap-4">
+      <div class="flex flex-col gap-1 lg:flex-row lg:gap-4">
         <div
           class="h-[45px] flex items-center text-white justify-between p-4 bg-[#70cf84] rounded-lg"
         >
@@ -59,10 +59,10 @@
     </section>
     <!-- header ends -->
     <!-- main section starts-->
-    <main class="mt-6 flex justify-between bg-[#dfe8f7]">
-      <div class="grid grid-cols-3 gap-2 ">
+    <main class="mt-6 lg:flex lg:flex-row flex-col lg:justify-between justify-center bg-[#dfe8f7] lg:ml-2 mb-2">
+      <div class="grid lg:grid-cols-3 grid-cols-1 gap-3">
       
-        <div class="card bg-base-100 w-[250px] shadow-sm">
+        <div class="card bg-base-100 w-[280px] shadow-sm">
           <figure>
             <img src="./assets/emergency.png" />
             <img src="" alt="">
@@ -77,9 +77,9 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-[250px] shadow-sm">
+        <div class="card bg-base-100 w-[280px] shadow-sm">
           <figure>
-            <img src="./assets/emergency.png" />
+            <img src="./assets/police.png" />
             <img src="" alt="">
           </figure>
           <div class="card-body">
@@ -92,9 +92,9 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-[250px] shadow-sm">
+        <div class="card bg-base-100 w-[280px] shadow-sm">
           <figure>
-            <img src="./assets/emergency.png" />
+            <img src="./assets/fire-service.png" />
             <img src="" alt="">
           </figure>
           <div class="card-body">
@@ -107,9 +107,9 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-[250px] shadow-sm">
+        <div class="card bg-base-100 w-[280px] shadow-sm">
           <figure>
-            <img src="./assets/emergency.png" />
+            <img src="./assets/ambulance.png" />
             <img src="" alt="">
           </figure>
           <div class="card-body">
@@ -122,9 +122,9 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-[250px] shadow-sm">
+        <div class="card bg-base-100 w-[280px] shadow-sm">
           <figure>
-            <img src="./assets/emergency.png" />
+            <img src="./assets/police.png" />
             <img src="" alt="">
           </figure>
           <div class="card-body">
@@ -137,9 +137,9 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-[250px] shadow-sm">
+        <div class="card bg-base-100 w-[280px] shadow-sm">
           <figure>
-            <img src="./assets/emergency.png" />
+            <img class="h-[100px]" src="./assets/logo-dark.png" />
             <img src="" alt="">
           </figure>
           <div class="card-body">
@@ -157,8 +157,10 @@
       </div>
       </div>
       <!-- storage section -->
-      <div>
-        <h1>This is storage section</h1>
+      <div class="flex justify-between rounded-md bg-[#dff5f5] w-[300px]">
+        <h1><i class="fa-solid fa-clock"></i>Call History</h1>
+        <h1 class="rounded-lg h-[40px] w-[50px] p-2 mr-1 bg-green-400">Clear</h1>
+        
       </div>
     </main>
     <!-- main section ends-->
