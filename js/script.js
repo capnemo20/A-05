@@ -3,16 +3,16 @@
 const { number } = require("prop-types");
 
 // heart icon adding function
-const getHeartCountId = document.getElementById("heart-count");
-const heartIcons = document.getElementsByClassName("heart-icon");
-let heartCount = 0;
+// const getHeartCountId = document.getElementById("heart-count");
+// const heartIcons = document.getElementsByClassName("heart-icon");
+// let heartCount = 0;
 
-for (const icon of heartIcons) {
-  icon.addEventListener("click", () => {
-    heartCount++;
-    getHeartCountId.innerText = heartCount;
-  });
-}
+// for (const icon of heartIcons) {
+//   icon.addEventListener("click", () => {
+//     heartCount++;
+//     getHeartCountId.innerText = heartCount;
+//   });
+// }
 
 // <<<<<<<<<<<<<------------------------->>>>>>>>>>>>>>
 
@@ -53,20 +53,20 @@ for (const icon of heartIcons) {
 // }
 // <<<<<<<<<<<<<------------------------->>>>>>>>>>>>>>
 
-// copy button count increase and copy the number
-const copyIncreaseId = document.getElementById("copy-increase");
-const copyButtons = document.getElementsByClassName("copyBtn");
-let copyCount = 2;
+// // copy button count increase and copy the number
+// const copyIncreaseId = document.getElementById("copy-increase");
+// const copyButtons = document.getElementsByClassName("copyBtn");
+// let copyCount = 2;
 
-for (const copyButton of copyButtons) {
-  copyButton.addEventListener("click", function (num) {
-    const emergencyNumber = copyButton.getAttribute("data-emergency-number");
-    alert(`emergency number  has been copied: ${emergencyNumber}`);
-    copyCount++;
-    copyIncreaseId.innerText = copyCount;
-    navigator.clipboard.writeText(emergencyNumber);
-  });
-}
+// for (const copyButton of copyButtons) {
+//   copyButton.addEventListener("click", function (num) {
+//     const emergencyNumber = copyButton.getAttribute("data-emergency-number");
+//     alert(`emergency number  has been copied: ${emergencyNumber}`);
+//     copyCount++;
+//     copyIncreaseId.innerText = copyCount;
+//     navigator.clipboard.writeText(emergencyNumber);
+//   });
+// }
 // <<<<<<<<<<<<<------------------------->>>>>>>>>>>>>>
 
 // showing call details in call history section
