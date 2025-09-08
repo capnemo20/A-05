@@ -23,13 +23,17 @@ for (const btn of callButtons) {
     if (coins < 20) {
       alert("Sorry, you do not have sufficient coins to make a call");
     } else {
+        let callingNumber = btn.getAttribute("data-calling-number");
+        let serviceName = btn.getAttribute("data-service-name")
+        alert(`Calling ${serviceName} ${callingNumber}`)
       coins = coins - 20;
       coinsForCallId.innerText = coins;
     }
   });
 }
+// <<<<<<<<<<<<<------------------------->>>>>>>>>>>>>>
 
-// copy button count increase
+// copy button count increase and copy the number
 const copyIncreaseId = document.getElementById("copy-increase");
 const copyButtons = document.getElementsByClassName("copyBtn");
 let copyCount = 2;
@@ -37,9 +41,10 @@ let copyCount = 2;
 for (const copyButton of copyButtons) {
   copyButton.addEventListener("click", function (num) {
     const emergencyNumber = copyButton.getAttribute("data-emergency-number");
-    alert(`emergency number ${emergencyNumber} has been copied`);
+    alert(`emergency number  has been copied: ${emergencyNumber}`);
     copyCount++;
     copyIncreaseId.innerText = copyCount;
     navigator.clipboard.writeText(emergencyNumber);
   });
 }
+// <<<<<<<<<<<<<------------------------->>>>>>>>>>>>>>
