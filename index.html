@@ -99,11 +99,11 @@
           </div>
           <div class="card-body">
             <h2 class="card-title" >Fire Service</h2>
-            <p class="font-bold text-xl">999</p>
+            <p class="font-bold text-xl">911</p>
             <p class="border-1 rounded-md p-2 bg-[#f5faf6] w-[70px]">Fire</p>
             <div class="card-actions flex justify-between">
-              <button class="copyBtn btn bg-[#ede6d1]"  data-emergency-number ="999"><i class="fa-solid fa-copy"></i>Copy</button>
-              <button class="call btn bg-[#ede6d1]" data-calling-number ="999" data-service-name="Fire-service"><i class="fa-solid fa-phone"></i>Call</button>
+              <button class="copyBtn btn bg-[#ede6d1]"  data-emergency-number ="911"><i class="fa-solid fa-copy"></i>Copy</button>
+              <button class="call btn bg-[#ede6d1]" data-calling-number ="911" data-service-name="Fire-service"><i class="fa-solid fa-phone"></i>Call</button>
             </div>
           </div>
         </div>
@@ -156,16 +156,38 @@
         
       </div>
       </div>
-      <!-- storage section -->
-      <div class="flex justify-between rounded-md bg-white w-[300px]">
-        <h1><i class="fa-solid fa-clock"></i>Call History</h1>
-        <h1 class="rounded-xl h-[40px] w-[50px] p-2 mr-1 bg-green-400">Clear</h1>
+      <!-- call history section -->
+      <!-- <section class="h-[600px] w-[300px]">
+         <div class="flex justify-between rounded-md bg-white h-[600px]">
+           <h1><i class="fa-solid fa-clock"></i>Call History</h1>
+           <h1 class="rounded-xl h-[40px] w-[50px] p-2 mr-1 bg-green-400">Clear</h1>
+         </div>
+         <div id="call-history" class="flex-1 overflow-y-auto mt-2 bg-gray-50 p-2">
+            <h1>This is history</h1>
+         </div>
+      
         
-      </div>
+       </section> -->
+       <section class="h-[600px] w-[300px] flex flex-col">
+
+          <div class="flex justify-between rounded-md bg-white p-2">
+            <h1 class="font-bold"><i class="fa-solid fa-clock mr-2"></i>Call History</h1>
+            <button id="clear" class="rounded-xl h-[40px] w-[50px] p-2 mr-1 bg-green-400 text-center font-bold">Clear</button>
+    
+          </div>
+
+  
+          <div id="call-history" class="flex-1 bg-gray-50">
+    
+          </div>
+        </section>
+        
+      
     </main>
     <!-- main section ends-->
 
     <script src="./js/script.js"></script>
+    <script src="./js/callFunction.js"></script>
     <script src="https://kit.fontawesome.com/ea9851f9c7.js" crossorigin="anonymous"></script>
   </body>
 </html>
