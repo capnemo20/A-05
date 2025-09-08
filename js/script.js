@@ -28,3 +28,18 @@ for (const btn of callButtons) {
     }
   });
 }
+
+// copy button count increase
+const copyIncreaseId = document.getElementById("copy-increase");
+const copyButtons = document.getElementsByClassName("copyBtn");
+let copyCount = 2;
+
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener("click", function (num) {
+    const emergencyNumber = copyButton.getAttribute("data-emergency-number");
+    alert(`emergency number ${emergencyNumber} has been copied`);
+    copyCount++;
+    copyIncreaseId.innerText = copyCount;
+    navigator.clipboard.writeText(emergencyNumber);
+  });
+}
